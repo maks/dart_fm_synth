@@ -1,0 +1,6 @@
+LIBRARY   fmsynth
+EXPORTS
+   fmsynth_new
+   fmsynth_free
+   fmsynth_reset
+   fmsynth_set_parameter
