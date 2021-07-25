@@ -4,3 +4,4 @@ EXPORTS
    fmsynth_free
    fmsynth_reset
    fmsynth_set_parameter
+   fmsynth_get_version
