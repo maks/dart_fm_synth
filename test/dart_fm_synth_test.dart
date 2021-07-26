@@ -3,14 +3,15 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    final awesome = Awesome();
+    DartFmSynth.init('build/libfmsynth.so');
+    final synth = DartFmSynth(44100, 2);
 
     setUp(() {
       // Additional setup goes here.
     });
 
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    test('expected lib version is returned', () {
+      expect(DartFmSynth.version(), 2);
     });
   });
 }

@@ -5,9 +5,11 @@ include: package:lints/recommended.yaml
 #     - camel_case_types
 
 analyzer:
- strong-mode:
+  strong-mode:
     implicit-casts: false
     implicit-dynamic: false
+  exclude:
+    - lib/libfmsynth_generated_bindings.dart    
 
 # For more information about the core and recommended set of lints, see
 # https://dart.dev/go/core-lints
